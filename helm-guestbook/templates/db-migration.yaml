@@ -11,6 +11,6 @@ spec:
     spec:
       restartPolicy: Never
       containers:
-      - name: db-migration
+      - name: migration
         image: busybox
         command: ["sh", "-c", "echo 'running db migration...'; sleep 10; echo 'db migration done';"]
